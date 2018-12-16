@@ -1,0 +1,126 @@
+<DOCTYPE html>
+  <html>
+  <head>
+    <title>Terminal</title>
+  </head>
+  <body>
+    <style>
+
+body {
+  background: black;
+}
+
+.blink {
+  width: 20px;
+  height: 30px;
+  border-radius: 0%;
+  display: block;
+  background-color: #08fd00;
+  -webkit-animation-name: blink1;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: .7s;
+  position: absolute;
+  left: 70px;
+}
+
+@keyframes blink1 {
+  0% { background-color: black; }
+  50% { background-color: #08fd00; }
+  100% { background-color: black; }
+}
+
+p {
+  color: #08fd00;
+  font-family: monospace;
+  font-size: 30px;
+}
+
+.termInput {
+  position: absolute;
+  background-color: black;
+  border-color: black;
+  color: #08fd00;
+  font-size: 30px;
+}
+
+.termSim {
+  font-size: 20px;
+  color: #08fd00;
+  font-family: monospace;
+  right: 30px;
+  position: absolute;
+}
+
+/*
+.type {
+  color: #08fd00;
+  font-size: 15px;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #08fd00; }
+}
+
+*/
+    
+    .clippy {
+        height: 130px;
+        width: 70px;
+        position: absolute;
+        left: 1300px;
+        top: 650px;
+    }
+    
+    .clippy-text {
+        color: #08fd00;
+        font-family: monospace;
+        left: 1000px;
+        top: 590px;
+        position: absolute;
+    }
+    
+    .clippy-text2 {
+        color: #08fd00;
+        font-family: monospace;
+        left: 1000px;
+        top: 610px;
+        position: absolute;
+    }
+    
+    .clippy-text3 {
+        color: #08fd00;
+        font-family: monospace;
+        left: 1000px;
+        top: 630px;
+        position: absolute;
+    }
+    
+    </style>
+  </body>
+  <h1 class="termSim">welcome_home.sh</h1>
+  <div class="blink">
+  </div>
+  <img class="clippy" src="https://i.imgur.com/tK69zNu.png" alt="green clippy">
+  <p>$:~</p>
+  <!-- <input class="termInput"></input> -->
+  <div class="type">
+  </div>
+  <h3 class="clippy-text">It looks like you are trying make your</p>
+  <h3 class="clippy-text2">own custom homepage, would you</p>
+  <h3 class="clippy-text3">like help?</p>
+  </html>
